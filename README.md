@@ -152,7 +152,7 @@ Default email (receives email from customers):
 
 
 
-Download and Install HeidiSQL
+> Download and Install HeidiSQL
 
 ![Image](assets/sql.png)
 
@@ -168,7 +168,7 @@ Create a database called “osTicket”:
 
 
 
-Continue Setting up osTicket in the browser
+> Continue Setting up osTicket in the browser
 
 MySQL Database: osTicket
 
@@ -186,7 +186,7 @@ Congratulations, hopefully it is installed with no errors!
 
 
 
-Clean up
+> Clean up
 
 Delete: C:\inetpub\wwwroot\osTicket\setup:
 
@@ -198,7 +198,7 @@ Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-conf
 
 
 
-Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
+> Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
 
 ![Image](assets/admin.png)
 

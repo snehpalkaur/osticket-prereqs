@@ -69,6 +69,8 @@ Fix any failures if required.
 
 Install PHP Version 7.3.8 (or any other version if necessary, archives).
 
+![Image](assets/php.png)
+
 Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
 
 Install PHP Manager 1.5.0 for IIS 10:
@@ -148,23 +150,23 @@ Name Helpdesk.
 
 Default email (receives email from customers):
 
-![Image](assets/helpdesk.png)
+![Image](assets/continue.png)
 
 
 
 > Download and Install HeidiSQL
 
-![Image](assets/sql.png)
+![Image](assets/heidi.png)
 
 Create a new session, root/Password1.
 
 Connect to the session:
 
-![Image](assets/sessions.png)
+![Image](assets/2ndheidi.png)
 
 Create a database called “osTicket”:
 
-![Image](assets/osTicket.png)
+![Image](assets/Database.png)
 
 
 
@@ -176,13 +178,11 @@ MySQL Username: root
 
 MySQL Password: Password1:
 
-![Image](assets/heidi.png)
-
 Click “Install Now!”
 
 Congratulations, hopefully it is installed with no errors!
 
-![Image](assets/done.png)
+![Image](assets/final-install.png)
 
 
 
@@ -190,17 +190,19 @@ Congratulations, hopefully it is installed with no errors!
 
 Delete: C:\inetpub\wwwroot\osTicket\setup:
 
-![Image](assets/clean_up.png)
+![Image](assets/delete.png)
 
 Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
 
-![Image](assets/missions.png)
+![Image](assets/disable.png)
+
+![Image](assets/disallow.png)
 
 
 
 > Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
 
-![Image](assets/admin.png)
+![Image](assets/finish.png)
 
 
 

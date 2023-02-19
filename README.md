@@ -28,45 +28,42 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 Create a Resource Group
 
-![Image](assets)
+![Image](assets/resource.png)
 
 Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs When creating the VM, allow it to create a new Virtual Network (Vnet):
 
 Windows Virutal Machine
 
+![Image](assets/windows.png)
 
 
 Connect to your Virtual Machine with Remote Desktop
 
-Remote Desktop
-
-
+![Image](assets/remote.png)
 
 Install / Enable IIS in Windows
 
 Enable IIS in Windows
 
-
+![Image](assets/iis.png)
 
 Install Web Platform Installer
 
-Enable IIS in Windows
+![Image](assets/web.png)
 
 Open after installation:
 
-MySQL 5.5
-
+![Image](assets/after.png)
 
 Add MySQL 5.5 (it will ask for credentials to be created later).
 
 Name: root
 
 Password: Password1:
-Credentials
+
+![Image](assets/cred.png)
 
 Add All simple versions of x86 PHP up until 7.3:
-
-PHP
 
 Fix any failures if required.
 
@@ -76,9 +73,7 @@ Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
 
 Install PHP Manager 1.5.0 for IIS 10:
 
-PHP Manager
-
-
+![Image](assets/php.png)
 
 Install osTicket v1.15.8
 
@@ -86,27 +81,23 @@ Download osTicket (download from within lab files: link).
 
 Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 
-PHP Manager
-
-PHP Manager
+![Image](assets/os.png)
 
 Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
 
 rename to osTicket
 
-
+![Image](assets/inet.png)
 
 Reload IIS (Open IIS, Stop and Start the server)
 
 Go to sites -> Default -> osTicket:
 
-default osTicket
+![Image](assets/sites.png)
 
 On the right, click “Browse *:80”:
 
-port 80
-
-
+![Image](assets/port.png)
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
@@ -114,7 +105,7 @@ Go back to IIS, sites -> Default -> osTicket.
 
 Double-click PHP Manager:
 
-PHP Manager
+![Image](assets/extensions.png)
 
 Click “Enable or disable an extension”.
 
@@ -130,9 +121,7 @@ Disk Sanitization Steps
 
 Refresh the osTicket site in your browser, observe the changes
 
-osTicket change
-
-
+![Image](assets/changes.png)
 
 Rename
 
@@ -140,22 +129,17 @@ From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
 
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
 
-ost-config
-
-
+![Image](assets/ost.png)
 
 Assign Permissions: ost-config.php
 
 Disable inheritance -> Remove All:
 
-disable inheritance
+![Image](assets/disable.png)
 
 New Permissions -> Everyone -> All:
 
-new permissions
-
-new permissions - all
-
+![Image](assets/perm.png)
 
 
 Continue Setting up osTicket in the browser (click Continue)
@@ -164,23 +148,23 @@ Name Helpdesk.
 
 Default email (receives email from customers):
 
-continue osTicket setup osTicket settings
+![Image](assets/helpdesk.png)
 
 
 
 Download and Install HeidiSQL
 
-download HeidiSQL
+![Image](assets/sql.png)
 
 Create a new session, root/Password1.
 
 Connect to the session:
 
-create sessions
+![Image](assets/sessions.png)
 
 Create a database called “osTicket”:
 
-create database
+![Image](assets/osTicket.png)
 
 
 
@@ -192,13 +176,13 @@ MySQL Username: root
 
 MySQL Password: Password1:
 
-setting up osTicket cont'd
+![Image](assets/heidi.png)
 
 Click “Install Now!”
 
 Congratulations, hopefully it is installed with no errors!
 
-installation complete
+![Image](assets/done.png)
 
 
 
@@ -206,17 +190,17 @@ Clean up
 
 Delete: C:\inetpub\wwwroot\osTicket\setup:
 
-clean up
+![Image](assets/clean_up.png)
 
 Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
 
-permissions
+![Image](assets/missions.png)
 
 
 
 Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
 
-admin panel
+![Image](assets/admin.png)
 
 
 

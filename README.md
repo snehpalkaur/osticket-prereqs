@@ -222,3 +222,6 @@ And right now, you may practice running your own fictitious help desk locally to
 
 💡 Do not forget clean up your environment in Azure.
 
+### *References:*
+[Link to download files](https://docs.google.com/document/d/12QH7yrsaiUfYNOgZK7KgTSZQSJ-HYTSVcGFildWMRig/edit#)
+

@@ -216,7 +216,9 @@ Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-conf
 
 
 
-And there you have it! I hope this tutorial helped you with installing osTicket.
+I wish you luck installing osTicket using this guide.
 
-And now you can practice having your own mock help desk locally to prepare you for a postion in a help desk or IT support position.
+And right now, you may practice running your own fictitious help desk locally to be ready for a job in an IT support or help desk role.
+
+💡 Do not forget clean up your environment in Azure.
 

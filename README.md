@@ -220,7 +220,7 @@ I wish you luck installing osTicket using this guide.
 
 And right now, you may practice running your own fictitious help desk locally to be ready for a job in an IT support or help desk role.
 
-💡 Do not forget clean up your environment in Azure.
+💡 Do not forget to clean up your environment in Azure.
 
 ### *References:*
 [Link to download files](https://docs.google.com/document/d/12QH7yrsaiUfYNOgZK7KgTSZQSJ-HYTSVcGFildWMRig/edit#)

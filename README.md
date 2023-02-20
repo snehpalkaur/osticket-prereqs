@@ -41,41 +41,54 @@ Connect to your Virtual Machine with Remote Desktop
 
 ![Image](assets/remote.png)
 
-Install / Enable IIS in Windows
+Install / Enable IIS in Windows WITH CGI
 
-Enable IIS in Windows
+ World Wide Web Services -> Application Development Features -> [X] CGI
 
 ![Image](assets/iis.png)
 
-Install Web Platform Installer
-
-![Image](assets/web.png)
-
-Open after installation:
-
-![Image](assets/after.png)
-
-Add MySQL 5.5 (it will ask for credentials to be created later).
-
-Name: root
-
-Password: Password1:
-
-![Image](assets/cred.png)
-
-Add All simple versions of x86 PHP up until 7.3:
-
-Fix any failures if required.
-
-Install PHP Version 7.3.8 (or any other version if necessary, archives).
+Download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
 
 ![Image](assets/php.png)
 
-Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
+Download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+ 
+ ![Image](assets/rewrite.png)
+ 
+Create the directory C:\PHP
 
-Install PHP Manager 1.5.0 for IIS 10:
+![Image](assets/dir.png)
 
-![Image](assets/php.png)
+Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
+
+![Image](assets/unzip.png)
+
+Download and install VC_redist.x86.exe
+
+![Image](assets/visual.png)
+
+Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+
+Typical Setup ->
+Launch Configuration Wizard (after install) ->
+Standard Configuration ->
+Password1
+
+![Image](assets/mysql.png)
+
+![Image](assets/sql-p.png)
+
+Open IIS as an Admin
+
+![Image](assets/iis-admin.png)
+
+Register PHP from within IIS
+
+Reload IIS (Open IIS, Stop and Start the server)
+
+![Image](assets/enablephp.png)
+
+
 
 Install osTicket v1.15.8
 
@@ -83,31 +96,28 @@ Download osTicket (download from within lab files: link).
 
 Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
 
-![Image](assets/os.png)
+![Image](assets/upload.png)
 
 Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
 
 rename to osTicket
 
-![Image](assets/inet.png)
+![Image](assets/upload-rename.png)
 
 Reload IIS (Open IIS, Stop and Start the server)
 
 Go to sites -> Default -> osTicket:
 
-![Image](assets/sites.png)
-
 On the right, click “Browse *:80”:
 
-![Image](assets/port.png)
+![Image](assets/osTicket.png)
+
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
 Go back to IIS, sites -> Default -> osTicket.
 
 Double-click PHP Manager:
-
-![Image](assets/extensions.png)
 
 Click “Enable or disable an extension”.
 
@@ -117,13 +127,11 @@ Enable: php_intl.dll.
 
 Enable: php_opcache.dll:
 
-Disk Sanitization Steps
-
-
+![Image](assets/php_extensions.png)
 
 Refresh the osTicket site in your browser, observe the changes
 
-![Image](assets/changes.png)
+![Image](assets/refersh.png)
 
 Rename
 
@@ -141,16 +149,18 @@ Disable inheritance -> Remove All:
 
 New Permissions -> Everyone -> All:
 
-![Image](assets/perm.png)
+![Image](assets/everyone.png)
 
 
 Continue Setting up osTicket in the browser (click Continue)
 
-Name Helpdesk.
+Name SnehHelpdesk.
 
 Default email (receives email from customers):
 
 ![Image](assets/continue.png)
+
+![Image](assets/helpdesk.png)
 
 
 
